@@ -1,0 +1,49 @@
+<!-- Ceci est un commentaire en HTML, il n'apparaîtra pas dans le navigateur -->
+<!-- 
+    Les lignes de 6 à 12 sont des lignes "imposés" pour que le navigateur interprète bien le fichier
+    Elles ne sont pas nécessaires à connaître tout de suite et elle ne sont pas foncièrement vitales
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours</title>
+</head>
+<!-- 
+    Ici c'est le plus important, le bloc <body></body> est le corps de ton code, il contient ce qui sera affiché
+    Le code encadré de chevrons sont des BALISES HTML, il en existe beaucoup, les plus utilisés sont les suivantes:
+    <h1></h1> les headings sont les titres
+    <p></p> les paragraphes, le texte (hors heading) à afficher doit être écrit dedans
+    <div></div> les divisions, elles sont là pour compartimenter ton code, est TRES utile pour le CSS
+    <button></button> bon là c'est relativement transparent
+    <span></span> pour mettre des sous-textes dans les balises <p> si on veut leur mettre un CSS différent
+    <style></style> pour écrire ou importer du CSS, on verra ça plus tard
+    <script></script> pour écrire ou importer du Javascript 🎭 🤡
+-->
+<body>
+    <!-- Le titre dans un h1 pour qu'il ressorte bien -->
+    <h1>IDLE GAME</h1>
+    <!-- 
+        La valeur que nous allons manipuler se trouvera ici mais grâce à JS, pas besoin de l'écrire ici
+        Il y a marqué id="value" dans la balise, on lui met un tag pour lui reconnaître, c'est TRES important en JS et CSS
+        Ainsi on peu plus facilement la cibler grâce à des fonctions JS, tu verras ça après dans le fichier JS
+     -->
+    <p id="value"></p>
+    <!-- Le bouton qui permet d'ajouter +1 à la valeur -->
+    <button id="addButton">add 1</button>
+    <!-- Le bouton qui permet de multiplier par *2 à la valeur -->
+    <button id="multButton">mult by 2</button>
+    <!-- 
+        Le cerveau de ton code
+        La balise script peut permettre  d'importer un fichier JS dans ton fichier HTML
+        Elle peut être utiliser aussi comme ceci (mais c'est violement moche):
+        <script type="text/javascript">
+            CODE JAVASCRIPT ICI
+        </script>
+        L'attribut "src" dans la balise permet d'importer le fichier JS
+        Si t'as lu jusqu'ici, vas dans ce fichier JS et lis la suite
+    -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
